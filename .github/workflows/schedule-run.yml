@@ -1,0 +1,36 @@
+name: Scheduled Run
+
+on:
+  schedule:
+    # Run at 1pm PST (9pm UTC) on weekdays
+    - cron: '0 20 * * 1-5'
+
+jobs:
+  checkTimeZone:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Time Zone
+      run: |
+        echo "Current Time Zone: $(date +%Z)"
+  
+#  scheduledRun:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#    - name: Checkout code
+#      uses: actions/checkout@v2
+#      
+#    - name: Set up Python
+#      uses: actions/setup-python@v2
+#      with:
+#        python-version: 3.8
+#
+#    - name: Install dependencies
+#      run: |
+#        python -m pip install --upgrade pip
+#        python -m pip install pandas
+#        python -m pip install yfinance
+#
+#    - name: Run the script
+#      run: python __main__.py

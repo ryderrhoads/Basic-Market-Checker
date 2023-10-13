@@ -1,0 +1,12 @@
+Basic Materials, (populate data here! there should be the webhook to the channel after the comma)
+Healthcare
+Energy,
+Consumer Defensive,
+Industrials,
+Financial Services,
+Communication Services,
+Technology,
+Consumer Cyclical,
+Utilities,
+Unknown,
+Real Estate,

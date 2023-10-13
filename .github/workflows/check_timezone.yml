@@ -1,0 +1,15 @@
+name: Check Time Zone
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  checkTimeZone:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Time Zone
+      run: |
+        echo "Current Time Zone: $(date +%Z)"
